@@ -1,0 +1,11 @@
+make html file ✅
+make boilerplate code -> use html:5 or ! in VSCode ✅
+understand tags -> <></> is called a tag and the value in between it is called the tag name with opening and closing eg: <dog></dog> is dog tag ✅
+understand h1-h6 -> h1-h6 are known as headings ✅
+understand p -> is paragraph tag ✅
+understand br -> is break tag to take the content to next line ✅
+understand img -> is image tag to insert image -> it ask src and alt for alternate name of image ✅
+understand a -> is anchor link tag to embed links ✅
+understand div -> is a kind of rectangular box or a container to hold multiple elements inside it. Div has width 100% or full but height is 0 by default. It takes the height of its child components ✅
+understand id -> id name cannot be repeated as it needs to be unique ✅
+understand class -> class name can be repeated as it can be used as a common attribute ✅
