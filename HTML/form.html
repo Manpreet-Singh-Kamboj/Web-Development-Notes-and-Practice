@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" method="">
+        <label for="name"><b>Name:</b> &nbsp;</label>
+        <input id="name" type="text" required />
+        <br />
+        <br />
+        <label for="email"><b>Email:</b> &nbsp;</label>
+        <input id="email" type="email" required />
+        <br />
+        <br />
+        <label for="password"><b>Password:</b> &nbsp;</label>
+        <input id="password" type="password" required />
+        <br />
+        <br />
+        <label for="confirmpassword"><b>Confirm Password:</b> &nbsp;</label>
+        <input id="confirmpassword" type="password" required />
+        <br />
+        <br />
+        <label for="profile"><b>Upload Profile Image:</b> &nbsp;</label>
+        <input id="profile" type="file" required accept="image/*" />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
