@@ -15,11 +15,14 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        flex-direction: column;
+        gap: 30px;
       }
     </style>
   </head>
   <body>
     <div class="form-container">
+      <h1>Registration Form</h1>
       <form action="" method="">
         <label for="name"><b>Name:</b> &nbsp;</label>
         <input id="name" type="text" required />
@@ -39,6 +42,12 @@
         <br />
         <label for="profile"><b>Upload Profile Image:</b> &nbsp;</label>
         <input id="profile" type="file" required accept="image/*" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <label for="bio"><b>Bio:</b> &nbsp;</label>
+        <textarea id="bio" rows="5" cols="40"></textarea>
         <br />
         <br />
         <button type="submit">Submit</button>
