@@ -14,7 +14,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  background-color: #6a1b9a;
   color: white;
 }
 
@@ -48,7 +48,7 @@ p {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: #6a1b9a;
   color: white;
   padding: 5px;
 }
