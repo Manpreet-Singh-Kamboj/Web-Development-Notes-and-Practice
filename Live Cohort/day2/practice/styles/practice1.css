@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  background-color: #005f73;
+  padding: 10px 20px;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: white;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.hero {
+  width: 100%;
+  background-position: center;
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/oXrLmSl.jpeg");
+}
+
+.hero .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 7px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 35px;
+}
+
+.btn {
+  border: none;
+  background-color: #ee6c4d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #dd5f3f;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.services h2 {
+  color: rgb(17, 97, 200);
+  line-height: 35px;
+}
+
+.services p {
+  line-height: 35px;
+}
+.services ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  line-height: 25px;
+  background-color: #f4f4f4;
+}
+
+.about h2 {
+  color: green;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  line-height: 25px;
+}
+
+.contact h2 {
+  color: red;
+}
+
+.footer {
+  background-color: #005f73;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 460px) {
+  .services {
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    justify-content: center;
+    align-items: center;
+  }
+}
