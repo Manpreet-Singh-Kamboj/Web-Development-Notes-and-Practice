@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-top: 30px;
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header nav {
+  background-color: #3498db;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header h1 {
+  color: #2e3d4b;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header nav b {
+  font-weight: 200;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 20px 0px 15px 0px;
+  padding: 5px;
+}
+
+.first-blog,
+.second-blog {
+  background-color: white;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 0px 1px 5px lightgray;
+}
+
+.first-blog h2,
+.second-blog h2 {
+  color: #2e3d4b;
+  border-bottom: 1px dashed #cccccc;
+  margin: 0px 10px;
+  padding-top: 30px;
+  line-height: 50px;
+}
+
+.first-blog p,
+.second-blog p {
+  font-size: 15px;
+  margin: 0px 10px;
+  padding: 10px 0px;
+}
+
+.first-blog img {
+  background-position: center;
+  background-size: cover;
+  max-width: 350px;
+  border-radius: 5px;
+  margin: auto auto;
+}
+
+.first-blog h3,
+.second-blog h3 {
+  margin: 0px 10px;
+}
+
+.first-blog ul,
+.second-blog ul {
+  margin: 0px 60px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.first-blog ul {
+  margin-bottom: 20px;
+}
+
+.first-blog {
+  margin-bottom: 30px;
+}
+
+.second-blog ol {
+  margin: 0px 60px;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+.blog-hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  padding-bottom: 20px;
+  margin: 0px 15px;
+}
