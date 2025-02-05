@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./styles/practice7.css" />
+  </head>
+  <body>
+    <section id="container">
+      <form id="form-container">
+        <h1>Feedback Form</h1>
+        <div id="inputs">
+          <label for="name">Name: </label>
+          <input type="text" id="name" />
+        </div>
+        <div id="inputs">
+          <label for="email">Email: </label> <input type="text" id="email" />
+        </div>
+        <div id="inputs">
+          <label for="age">Age: </label>
+          <input type="number" id="age" />
+        </div>
+        <div id="inputs">
+          <label for="feedback">Types of Feedback: </label>
+          <select name="feedback" id="feedback">
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+            <option value="suggestion">Suggestion</option>
+          </select>
+        </div>
+        <div id="services-container">
+          <label for="services"><b>Services Used:</b> </label>
+          <div>
+            <input type="checkbox" id="services1" />
+            <label for="services1">Service 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="services2" />
+            <label for="services2">Service 2</label>
+          </div>
+          <div>
+            <input type="checkbox" id="services3" />
+            <label for="services3">Service 3</label>
+          </div>
+        </div>
+        <div id="inputs">
+          <label for="comments">Additional Comments: </label>
+          <textarea id="comments" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Submit Feedback" id="submit-btn" />
+      </form>
+    </section>
+  </body>
+</html>

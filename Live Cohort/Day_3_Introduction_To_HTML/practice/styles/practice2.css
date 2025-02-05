@@ -1,0 +1,54 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6a1b9a;
+  color: white;
+}
+
+.link-container {
+  display: flex;
+  padding-bottom: 15px;
+  gap: 40px;
+}
+
+.blogs-container {
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.container {
+  background-color: white;
+  padding: 10px;
+  box-shadow: gray 1px 1px 10px;
+  border-radius: 8px;
+}
+
+.separator {
+  border: 0;
+  border-top: 1.5px lightgray solid;
+}
+
+p {
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 5px;
+}

@@ -1,0 +1,59 @@
+* {
+  font-family: sans-serif;
+}
+
+.name-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.my-name {
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+  font-size: 27px;
+}
+
+.profile-image {
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 20%;
+}
+
+.my-passion {
+  font-size: 12px;
+}
+
+.container {
+  margin: 10px 15px;
+  padding: 2px 10px;
+  background-color: #f4f4f4;
+}
+
+.project-container {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  border: lightgray solid 1px;
+  height: 140px;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 20px 0px;
+  font-size: 12px;
+}

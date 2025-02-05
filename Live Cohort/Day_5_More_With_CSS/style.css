@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+#box {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to right bottom, orange, white, green);
+}
+
+#box2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(green, white, orange);
+  border-radius: 50%;
+}
+
+#box3 {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  border-radius: 50%;
+}
+
+#box4 {
+  width: 50%;
+  height: 50%;
+  background-color: crimson;
+}
+*/ #box5 {
+  height: 200px;
+  width: 200px;
+  background-color: antiquewhite;
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
+#box6 {
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 9;
+}
+
+#box7 {
+  height: 200px;
+  width: 200px;
+  background-color: violet;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 8;
+}
+
+#box8 {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#parent {
+  width: 400px;
+  height: 400px;
+  background-color: crimson;
+  position: relative;
+}
+
+#child {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  /* Align Items Work on Column or Y Axis */
+  /* align-items: center; */
+  /* Justify Content Work on Row or X Axis */
+  /* justify-content: space-around; */
+  /* Flex Direction is used to give direction to the flex of column or row or row-reverse or column-reverse */
+  /* flex-direction: column-reverse; */
+  background-color: rgb(11, 11, 48);
+}
+
+.child {
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.child1 {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+}
+
+.child2 {
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.child3 {
+  height: 200px;
+  width: 200px;
+  background-color: bisque;
+}
