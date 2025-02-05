@@ -1,0 +1,85 @@
+body {
+  background-color: #333;
+  color: white;
+  perspective: 100px;
+}
+/* button:hover {
+  color: rebeccapurple;
+  background-color: rebeccapurple;
+} */
+
+input:focus {
+  color: red;
+  background-color: lightgray;
+}
+
+li::before {
+  content: "Before  ";
+}
+
+li::after {
+  content: " After";
+}
+
+a:active {
+  color: red;
+}
+
+button {
+  background-color: lightblue;
+  transition: background-color 0.4s ease-out;
+  color: red;
+}
+
+button:hover {
+  background-color: bisque;
+  color: black;
+}
+
+/* .box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  transform: translate(50%, 50%);
+} */
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transform: translate3d(20px, 40px, -70px);
+  margin-left: 100px;
+}
+
+/* .box:hover {
+  transform: translate(100px, 100px) rotate(45deg) scale(0.5) skew(45deg, 20deg);
+} */
+
+.box2 {
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+  animation: myAnimation 4s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+
+@keyframes myAnimation {
+  0% {
+    background-color: lightblue;
+    transform: scale(1.5) rotate(45deg);
+  }
+  35% {
+    background-color: bisque;
+    transform: scale(1.2) rotate(-45deg);
+  }
+  70% {
+    background-color: aqua;
+    transform: scale(1.6) rotate(90deg);
+  }
+  100% {
+    background-color: lightblue;
+    transform: scale(0.5) rotate(-45deg) skew(10deg, 0deg)
+      translate3d(20px, 50px, -40px);
+  }
+}
