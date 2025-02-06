@@ -186,3 +186,10 @@ body {
     transform: translateY(-5px);
   }
 }
+
+@media (max-width: 475px) {
+  #form-container {
+    width: 100%;
+    margin: 0px 20px;
+  }
+}
