@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#nav {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  #logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    .nav-link a {
+      text-decoration: none;
+      color: #333333af;
+      transition: all ease 0.5s;
+      position: relative;
+      &:hover {
+        color: black;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.15rem;
+        background-color: #333;
+        left: 0;
+        bottom: -10%;
+        opacity: 0;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+        transform: translateX(-50%);
+      }
+      &:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  #heading {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.5rem;
+  }
+  #content {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  #main-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  #explore-btn {
+    padding: 0.7rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+  #grid-container {
+    display: grid;
+    width: 90%;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding-bottom: 3rem;
+    .image {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      background-position: center;
+      background-size: cover;
+      border-radius: 1rem;
+    }
+    .image1 {
+      background-image: url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8M2QlMjBzaGFwZXN8ZW58MHx8MHx8fDA%3D");
+    }
+    .image2 {
+      background-image: url("https://images.unsplash.com/photo-1618172193763-c511deb635ca?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    .image3 {
+      background-image: url("https://images.unsplash.com/photo-1616651181742-3992e339e2a4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8M2QlMjBzaGFwZXN8ZW58MHx8MHx8fDA%3D");
+    }
+    .image4 {
+      background-image: url("https://plus.unsplash.com/premium_photo-1672858225754-f2233f29a122?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8M2QlMjBzaGFwZXN8ZW58MHx8MHx8fDA%3D");
+    }
+    .image5 {
+      background-image: url("https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fDNkJTIwc2hhcGVzfGVufDB8fDB8fHww");
+    }
+    .image6 {
+      background-image: url("https://images.unsplash.com/photo-1627843240043-aa499ed215e7?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fDNkJTIwc2hhcGVzfGVufDB8fDB8fHww");
+    }
+    .image7 {
+      background-image: url("https://images.unsplash.com/photo-1635377090186-036bca445c6b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fDNkJTIwc2hhcGVzfGVufDB8fDB8fHww");
+    }
+    .image8 {
+      background-image: url("https://images.unsplash.com/photo-1628544106915-0d756c7dadfa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fDNkJTIwc2hhcGVzfGVufDB8fDB8fHww");
+    }
+  }
+}
+
+#footer {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1.5px solid lightgray;
+  }
+  p {
+    padding: 1rem 0rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #main-container {
+    #main-content {
+      #heading {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+      #content {
+        font-size: 1rem;
+      }
+    }
+  }
+}
