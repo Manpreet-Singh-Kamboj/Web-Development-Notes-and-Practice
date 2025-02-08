@@ -4,8 +4,8 @@
   text-decoration: none;
   color: white;
   padding: $vertical-padding $horizontal-padding;
-  border-radius: 10px;
-  border: 1px solid $nav-gradient-secondary;
+  border-radius: clamp(10px, 0.5vw, 1rem);
+  border: clamp(1px, 0.5vw, 0.2rem) solid $nav-gradient-secondary;
 }
 
 @mixin btn-bg($bg-color) {

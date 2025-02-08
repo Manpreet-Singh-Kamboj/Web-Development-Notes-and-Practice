@@ -19,157 +19,241 @@ body {
   overflow-x: hidden;
   align-items: center;
 }
-body #bg-image {
+body .bg-image {
+  width: 90%;
   position: absolute;
   top: 5%;
-  right: -5%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: right;
      object-position: right;
 }
 
-#header {
+.header {
   width: 100%;
   display: flex;
-  padding: 1.5rem 0rem;
+  padding: clamp(1.5rem, 2vh, 3rem) 0rem;
+  margin-bottom: clamp(1rem, 2vw, 5rem);
   justify-content: center;
 }
-#header #nav {
-  width: 85%;
+.header .nav {
+  width: 75%;
   display: flex;
   background-color: oklch(0.21 0.034 264.665);
   border: 1.5px solid oklch(0.373 0.034 259.733);
   border-radius: 1rem;
-  padding: 1rem 1rem;
+  padding: clamp(1rem, 1vw, 4rem);
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-#header #nav #nav-links {
+.header .nav .logo {
+  height: clamp(1rem, 3vw, 5rem);
+}
+.header .nav .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: clamp(1.5rem, 2vw, 3rem);
 }
-#header #nav #nav-links .nav-link a {
+.header .nav .nav-links .nav-link a {
   text-decoration: none;
   color: white;
-  padding: 0.4rem 0.7rem;
-  border-radius: 10px;
-  border: 1px solid oklch(0.373 0.034 259.733);
+  padding: clamp(0.4rem, 1vh, 3rem) clamp(0.7rem, 5vw, 3rem);
+  border-radius: clamp(10px, 0.5vw, 1rem);
+  border: clamp(1px, 0.5vw, 0.2rem) solid oklch(0.373 0.034 259.733);
+  font-size: clamp(0.5rem, 1.5vh, 1rem);
 }
-#header #nav #nav-links .sign-in {
+.header .nav .nav-links .sign-in {
   background-color: oklch(0.278 0.033 256.848);
 }
-#header #nav #nav-links .register {
+.header .nav .nav-links .register {
   background-color: oklch(0.585 0.233 277.117);
 }
 
-#main {
+.main {
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 1vw, 5rem);
   position: relative;
   z-index: 1;
 }
-#main #hero {
+.main .hero {
   margin-top: 1.5rem;
   width: 85%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(2rem, 1vw, 5rem);
 }
-#main #hero h2 {
+.main .hero h2 {
   color: transparent;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 3.5vw, 10rem);
   background-image: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
   -webkit-background-clip: text;
           background-clip: text;
 }
-#main #hero p {
+.main .hero p {
   color: oklch(0.87 0.065 274.039);
+  font-size: clamp(1rem, 1.5vw, 3rem);
 }
-#main #hero div {
+.main .hero div {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
-#main #hero div a {
+.main .hero div a {
   text-decoration: none;
   color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 10px;
-  border: 1px solid oklch(0.373 0.034 259.733);
+  padding: clamp(0.5rem, 1vh, 5rem) clamp(1rem, 2vw, 5rem);
+  border-radius: clamp(10px, 0.5vw, 1rem);
+  border: clamp(1px, 0.5vw, 0.2rem) solid oklch(0.373 0.034 259.733);
+  font-size: clamp(1rem, 0.5vw, 2rem);
 }
-#main #hero div a:nth-child(1) {
+.main .hero div a:nth-child(1) {
   background-color: oklch(0.585 0.233 277.117);
 }
-#main #hero div a:nth-child(2) {
+.main .hero div a:nth-child(2) {
   background-color: oklch(0.278 0.033 256.848);
 }
-#main #hero img {
+.main .hero img {
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 1rem;
+  border-radius: clamp(1rem, 1vw, 5rem);
 }
-#main #workflows {
+.main .workflows {
   width: 85%;
   margin: 2rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: clamp(1.5rem, 1vw, 4rem);
 }
-#main #workflows .workflow-span {
+.main .workflows .workflow-span {
   background: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+  font-size: clamp(1rem, 1.5vw, 5rem);
   position: relative;
 }
-#main #workflows .workflow-span::before {
+.main .workflows .workflow-span::before {
   content: "";
   position: absolute;
-  width: 1.5rem;
-  height: 1.5px;
+  width: clamp(1.5rem, 2vw, 5rem);
+  height: clamp(1.5px, 0.5vh, 4px);
   top: 50%;
-  left: -30%;
+  left: -20%;
+  transform: translate(0%, -50%);
   background: linear-gradient(to left, oklch(0.585 0.233 277.117), white);
 }
-#main #workflows .workflow-span::after {
+.main .workflows .workflow-span::after {
   content: "";
   position: absolute;
-  width: 1.5rem;
-  height: 1.5px;
+  width: clamp(1.5rem, 2vw, 5rem);
+  height: clamp(1.5px, 0.5vh, 4px);
   top: 50%;
-  right: -30%;
+  right: -20%;
+  transform: translate(0%, -50%);
   background: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
 }
-#main #workflows #workflow-content {
+.main .workflows .workflow-content {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#main #workflows #workflow-content h2 {
-  font-size: 2rem;
+.main .workflows .workflow-content h2 {
+  font-size: clamp(2rem, 3.5vw, 8.5rem);
   color: transparent;
   background: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
   -webkit-background-clip: text;
           background-clip: text;
 }
-#main #workflows #workflow-content p {
+.main .workflows .workflow-content p {
+  color: oklch(0.87 0.065 274.039);
+  font-size: clamp(1rem, 1.5vw, 5rem);
+}
+.main .workflows .card-container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(1rem, 1vw, 3rem);
+}
+.main .workflows .card-container .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: clamp(15px, 0.5vw, 2rem);
+  gap: 1rem;
+  border: clamp(1px, 0.5vw, 2px) solid oklch(0.278 0.033 256.848);
+  padding: 1rem;
+}
+.main .workflows .card-container .card p {
+  border-radius: clamp(15px, 0.5vw, 1.5rem);
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
+}
+.main .workflows .card-container .card p::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  inset: 0;
+  background-color: oklch(0.278 0.033 256.848);
+  border-radius: inherit;
+}
+.main .workflows .card-container .card p a {
+  position: relative;
+  padding: clamp(4px, 0.5vw, 2rem) clamp(10px, 0.5vw, 2rem);
+  z-index: 1;
+  font-size: clamp(10px, 0.5vw, 1.5rem);
+  background: linear-gradient(to right, oklch(0.585 0.233 277.117), white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: 600;
+  color: transparent;
+  text-decoration: none;
+}
+.main .workflows .card-container .card span {
+  font-size: clamp(1rem, 0.5vw, 3rem);
   color: oklch(0.87 0.065 274.039);
 }
+.main .workflows .card-container .card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
 
-@media (max-width: 639px) {
-  #main #hero div {
+@media (max-width: 600px) {
+  body .bg-image {
+    width: 100%;
+  }
+  .header .nav {
+    width: 90%;
+  }
+  .main {
+    width: 100%;
+  }
+  .main .hero div {
     flex-direction: column;
+  }
+  .main .workflows .card-container {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
