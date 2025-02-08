@@ -65,27 +65,27 @@ main {
 #marquee .marquee::before {
   content: "";
   height: 100%;
-  width: 35%;
+  width: 50%;
   background-image: linear-gradient(to right, #0e0e0e, transparent);
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -1%;
 }
 #marquee .marquee::after {
   content: "";
   height: 100%;
-  width: 35%;
+  width: 50%;
   background-image: linear-gradient(to right, transparent, #0e0e0e);
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1%;
 }
 #marquee .marquee .text {
   font-weight: 600;
   font-size: 1.3rem;
   padding: 0 1.5rem;
-  animation: marquee 10s linear infinite;
+  animation: marquee 8s linear infinite;
 }
 #marquee .marquee .text ul {
   list-style: none;
