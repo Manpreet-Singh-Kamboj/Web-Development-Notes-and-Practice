@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: wheat;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+#hero {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 80%;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+  p {
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.7;
+    margin: 1rem 0;
+    opacity: 0.6;
+    br {
+      display: none;
+    }
+  }
+}
+
+#marquee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .marquee {
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 35%;
+      background-image: linear-gradient(to right, #0e0e0e, transparent);
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      height: 100%;
+      width: 35%;
+      background-image: linear-gradient(to right, transparent, #0e0e0e);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .text {
+      font-weight: 600;
+      font-size: 1.3rem;
+      padding: 0 1.5rem;
+      animation: marquee 10s linear infinite;
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+        li {
+          p {
+            color: transparent;
+            background: linear-gradient(to right, bisque, white);
+            background-clip: text;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    img {
+      width: 50%;
+    }
+    h1 {
+      font-size: clamp(3rem, 1vw, 5rem);
+    }
+    p {
+      font-size: clamp(1.5rem, 1vw, 2.5rem);
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  /*
+    100vw = 1300px
+    10vw = 130px
+    1vw = 13px
+    */
+  #hero {
+    img {
+      width: 43%;
+    }
+    h1 {
+      font-size: clamp(5rem, 1vw, 7rem);
+    }
+    p {
+      font-size: clamp(2rem, 1vw, 3rem);
+      br {
+        display: block;
+      }
+    }
+  }
+}
