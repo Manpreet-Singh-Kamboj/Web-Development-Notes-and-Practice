@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin btn-style($horizontal-padding, $vertical-padding) {
+  text-decoration: none;
+  color: white;
+  padding: $vertical-padding $horizontal-padding;
+  border-radius: 10px;
+  border: 1px solid $nav-gradient-secondary;
+}
+
+@mixin btn-bg($bg-color) {
+  background-color: $bg-color;
+}
