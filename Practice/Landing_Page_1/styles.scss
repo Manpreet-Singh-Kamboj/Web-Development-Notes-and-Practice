@@ -252,7 +252,7 @@ p {
           font-weight: 400;
         }
         p {
-          font-size: clamp(0.9rem, 1.5vw, 3rem);
+          font-size: clamp(0.9rem, 1vw, 3rem);
           color: $paragraph-text;
           font-weight: 100;
         }

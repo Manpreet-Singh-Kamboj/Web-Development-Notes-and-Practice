@@ -21,7 +21,7 @@
 
 @mixin paragraph-style {
   color: $paragraph-text;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(0.9rem, 1vw, 3rem);
 }
 
 @mixin text-gradient {

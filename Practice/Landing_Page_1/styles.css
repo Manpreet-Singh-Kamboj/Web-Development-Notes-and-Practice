@@ -39,7 +39,7 @@ h2 {
 
 p {
   color: oklch(0.87 0.065 274.039);
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(0.9rem, 1vw, 3rem);
 }
 
 .header {
@@ -304,7 +304,7 @@ p {
   font-weight: 400;
 }
 .main .controls .control-grid .control-card p {
-  font-size: clamp(0.9rem, 1.5vw, 3rem);
+  font-size: clamp(0.9rem, 1vw, 3rem);
   color: oklch(0.87 0.065 274.039);
   font-weight: 100;
 }
