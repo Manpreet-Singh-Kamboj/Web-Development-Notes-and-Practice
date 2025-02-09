@@ -60,7 +60,7 @@ p {
     .nav-links {
       display: flex;
       list-style: none;
-      gap: clamp(1.5rem, 2vw, 3rem);
+      gap: clamp(0.5rem, 2vw, 3rem);
       .nav-link a {
         @include btn-style(clamp(0.7rem, 5vw, 3rem), clamp(0.4rem, 1vh, 3rem));
         font-size: clamp(0.5rem, 1.5vh, 1rem);
