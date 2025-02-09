@@ -11,3 +11,15 @@
 @mixin btn-bg($bg-color) {
   background-color: $bg-color;
 }
+
+@mixin heading-style($color1, $color2) {
+  font-size: clamp(2.5rem, 3.5vw, 10rem);
+  color: transparent;
+  background: linear-gradient(to right, $color1, $color2);
+  background-clip: text;
+}
+
+@mixin paragraph-style {
+  color: $paragraph-text;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
