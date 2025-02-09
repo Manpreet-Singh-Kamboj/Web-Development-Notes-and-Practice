@@ -1,3 +1,15 @@
+@font-face {
+  font-family: chillaxLight;
+  src: url("./fonts/Chillax/Chillax-Light.ttf");
+}
+@font-face {
+  font-family: satoshiLight;
+  src: url("./fonts/Satoshi/Satoshi-Light.ttf");
+}
+@font-face {
+  font-family: gambettaLightItalic;
+  src: url("./fonts/Gambetta/Gambetta-LightItalic.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,135 +20,127 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
-  color: wheat;
 }
 
 body {
+  font-family: sans-serif;
+  color: #d9c5a7;
   background-color: #0e0e0e;
 }
 
 main {
   width: 100%;
-  height: 100%;
+  padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-
-#hero {
-  width: 100%;
-  padding: 2rem 4rem;
+main .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: clamp(3rem, 2.5vh, 7rem);
+  width: 100%;
 }
-#hero img {
-  width: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
+main .hero img {
+  width: 60vw;
 }
-#hero h1 {
-  font-size: 3.3rem;
+main .hero div {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 1vh, 2.8rem);
+}
+main .hero div h1 {
+  font-weight: 100;
   text-align: center;
-  font-weight: lighter;
+  font-size: clamp(4rem, 8vw, 12rem);
+  font-family: satoshiLight;
 }
-#hero p {
+main .hero div h1 span {
+  font-family: gambettaLightItalic;
+}
+main .hero div p {
+  font-family: chillaxLight, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   text-align: center;
-  font-weight: lighter;
-  line-height: 1.7;
-  margin: 1rem 0;
-  opacity: 0.6;
+  font-weight: 100;
 }
-#hero p br {
+main .hero div p br {
   display: none;
 }
-
-#marquee {
+main .services {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+main .services .my-services {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 1rem;
 }
-#marquee .marquee {
-  width: 80%;
+main .services .my-services img {
+  width: clamp(1.8rem, 1.5vw, 3rem);
+  height: clamp(1.8rem, 1.5vw, 5rem);
+  position: relative;
+  z-index: -1;
+  padding: 3px;
+  border: 1px solid rgba(217, 197, 167, 0.4588235294);
+  background-color: #181716;
+  border-radius: clamp(1.5rem, 2vw, 2.5rem);
+}
+main .services .marquee {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
   overflow: hidden;
   position: relative;
 }
-#marquee .marquee::before {
-  content: "";
-  height: 100%;
-  width: 50%;
-  background-image: linear-gradient(to right, #0e0e0e, transparent);
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: -1%;
-}
-#marquee .marquee::after {
-  content: "";
-  height: 100%;
-  width: 50%;
-  background-image: linear-gradient(to right, transparent, #0e0e0e);
-  position: absolute;
-  top: 0;
-  right: -1%;
-}
-#marquee .marquee .text {
-  font-weight: 600;
-  font-size: 1.3rem;
-  padding: 0 1.5rem;
-  animation: marquee 8s linear infinite;
-}
-#marquee .marquee .text ul {
-  list-style: none;
+main .services .marquee .text {
+  animation: marquee 6s linear infinite both;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
+  padding: 2rem 2rem;
 }
-#marquee .marquee .text ul li p {
-  color: transparent;
-  background: linear-gradient(to right, bisque, white);
-  -webkit-background-clip: text;
-          background-clip: text;
+main .services .marquee .text p {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+main .services .marquee::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: -1%;
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(to right, #0e0e0e, transparent);
+}
+main .services .marquee::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  right: -2%;
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(to right, transparent, #0e0e0e);
 }
 
+@media (min-width: 992px) {
+  main .hero img {
+    width: 60vh;
+  }
+  main .hero div p br {
+    display: block;
+  }
+}
 @keyframes marquee {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
-  }
-}
-@media (min-width: 768px) {
-  #hero img {
-    width: 50%;
-  }
-  #hero h1 {
-    font-size: clamp(3rem, 1vw, 5rem);
-  }
-  #hero p {
-    font-size: clamp(1.5rem, 1vw, 2.5rem);
-  }
-  #hero p br {
-    display: block;
-  }
-}
-@media (min-width: 1020px) {
-  /*
-    100vw = 1300px
-    10vw = 130px
-    1vw = 13px
-    */
-  #hero img {
-    width: 43%;
-  }
-  #hero h1 {
-    font-size: clamp(5rem, 1vw, 7rem);
-  }
-  #hero p {
-    font-size: clamp(2rem, 1vw, 3rem);
-  }
-  #hero p br {
-    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
