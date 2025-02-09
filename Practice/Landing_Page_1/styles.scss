@@ -9,6 +9,7 @@
 
 html,
 body {
+  font-size: 16px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -301,7 +302,8 @@ p {
             border-radius: 50%;
           }
           p {
-            color: white;
+            @include paragraph-style;
+            font-weight: 100;
             span {
               color: gray;
             }
@@ -312,6 +314,9 @@ p {
                 cursor: pointer;
               }
             }
+          }
+          b {
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
           }
         }
       }
