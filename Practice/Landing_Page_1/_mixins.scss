@@ -23,3 +23,29 @@
   color: $paragraph-text;
   font-size: clamp(1rem, 1.5vw, 3rem);
 }
+
+@mixin text-gradient {
+  background: linear-gradient(to right, $btn-purple, white);
+}
+
+@mixin text-left($color1, $color2) {
+  content: "";
+  position: absolute;
+  width: clamp(1.5rem, 2vw, 5rem);
+  height: clamp(1.5px, 0.4vh, 2.5px);
+  top: 50%;
+  left: -20%;
+  transform: translate(0%, -50%);
+  background: linear-gradient(to left, $color1, $color2);
+}
+
+@mixin text-right($color1, $color2) {
+  content: "";
+  position: absolute;
+  width: clamp(1.5rem, 2vw, 5rem);
+  height: clamp(1.5px, 0.4vh, 2.5px);
+  top: 50%;
+  right: -20%;
+  transform: translate(0%, -50%);
+  background: linear-gradient(to right, $color1, $color2);
+}
