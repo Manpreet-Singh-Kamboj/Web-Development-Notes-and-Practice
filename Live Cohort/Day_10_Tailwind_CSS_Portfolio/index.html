@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header class="px-[10rem] py-8 font-['Helvetica_Now_Display']">
@@ -55,6 +55,176 @@
           alt=""
         />
       </section>
+      <section
+        class="my-[16rem] flex flex-col items-center text-center gap-6 relative"
+      >
+        <img
+          src="./assets/html.svg"
+          alt="HTML Logo"
+          class="w-18 h-18 absolute right-[10%] top-[-20%] rotate-[20deg] shadow-lg shadow-[#E44D27]"
+        />
+        <img
+          src="./assets/css.svg"
+          alt="CSS Logo"
+          class="w-14 h-14 absolute left-[30%] bottom-[-50%] -rotate-[20deg] shadow-lg shadow-[#2865F0]"
+        />
+        <img
+          src="./assets/js.svg"
+          alt="Javascript Logo"
+          class="w-14 h-14 absolute right-[30%] bottom-[-50%] rotate-[20deg] shadow-2xl shadow-[#F7DF1C]"
+        />
+        <img
+          src="./assets/vscode.svg"
+          alt="VSCode Logo"
+          class="w-14 h-14 absolute left-[10%] top-[-20%] -rotate-[20deg] shadow-lg shadow-[#51ADF3]"
+        />
+        <h1 class="text-4xl font-semibold">
+          <span class="text-[2.5rem] font-normal">[</span> I design & build
+          experiences
+          <span class="text-[2.5rem] font-normal">]</span>
+        </h1>
+        <p class="w-[72%] font-medium">
+          Quas qui ipsam harum ullam. Libero animi adipisci unde consequatur.
+          Officia id quidem dignissimos est cupiditate ducimus. Similique fuga
+          vero eos non aut velit libero. Harum dolore reprehenderit dolores.
+          Impedit et numquam voluptas sequi blanditiis odio distinctio
+          accusantium.
+        </p>
+      </section>
+      <section class="flex flex-col gap-28">
+        <div class="flex flex-col gap-10">
+          <div class="flex items-center gap-4">
+            <h1 class="text-7xl tracking-tighter">2017.</h1>
+            <div class="w-46 h-[1.5px] bg-[#030303]"></div>
+            <h1 class="text-7xl text-[#B2B2B2] tracking-tighter">
+              The Beginning
+            </h1>
+          </div>
+          <div class="grid grid-cols-3 w-full gap-8">
+            <div class="w-88 h-[27rem] bg-[#D9D9D9]"></div>
+            <div class="mt-36 w-88 h-[31rem] bg-[#D9D9D9]"></div>
+            <div class="mt-16 w-88 h-88 bg-[#D9D9D9]"></div>
+            <div class="-mt-40 w-88 h-[31rem] bg-[#D9D9D9]"></div>
+            <div class="mt-16 w-88 h-88 bg-[#D9D9D9]"></div>
+            <div class="-mt-44 w-88 h-[27rem] bg-[#D9D9D9]"></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex items-center gap-4">
+            <h1 class="text-7xl tracking-tighter">2018.</h1>
+            <div class="w-46 h-[1.5px] bg-[#030303]"></div>
+            <h1 class="text-7xl text-[#B2B2B2] tracking-tighter">Escalation</h1>
+          </div>
+          <div class="grid grid-cols-3 w-full gap-8">
+            <div class="w-88 h-[27rem] bg-[#D9D9D9]"></div>
+            <div class="mt-36 w-88 h-[31rem] bg-[#D9D9D9]"></div>
+            <div class="mt-16 w-88 h-88 bg-[#D9D9D9]"></div>
+            <div class="-mt-40 w-88 h-[31rem] bg-[#D9D9D9]"></div>
+            <div class="mt-16 w-88 h-88 bg-[#D9D9D9]"></div>
+            <div class="-mt-44 w-88 h-[27rem] bg-[#D9D9D9]"></div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-44 flex flex-col justify-center items-center gap-10">
+        <h2 class="text-3xl font-semibold">I am great at</h2>
+        <div class="w-[100%] flex flex-col items-center gap-8">
+          <div class="flex gap-10">
+            <img src="./assets/html.svg" alt="HTML" class="w-17 h-17" />
+            <img src="./assets/css.svg" alt="CSS" class="w-17 h-17" />
+            <img src="./assets/js.svg" alt="JS" class="w-17 h-17" />
+            <img src="./assets/react.svg" alt="React" class="w-17 h-17" />
+            <img src="./assets/next.svg" alt="Next" class="w-17 h-17" />
+            <img src="./assets/mongo.svg" alt="Mongo" class="w-17 h-17" />
+            <img
+              src="./assets/postgresql.svg"
+              alt="Postgres"
+              class="w-17 h-17"
+            />
+          </div>
+          <div class="flex gap-10">
+            <img src="./assets/flutter.svg" alt="Flutter" class="w-17 h-17" />
+            <img src="./assets/git.svg" alt="Git" class="w-17 h-17" />
+            <img src="./assets/vscode.svg" alt="VSCode" class="w-17 h-17" />
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col mt-36">
+        <div>
+          <h6 class="text-4xl -mb-10 -ml-2 tracking-tighter">Client</h6>
+          <div class="flex items-center gap-5">
+            <h1 class="text-8xl font-bold -ml-2 tracking-tighter leading-none">
+              Testimonials
+            </h1>
+            <img
+              src="./assets/arrow.png"
+              alt="arrow"
+              class="w-[40%] h-[100%] z-[-1]"
+            />
+            <h1 class="text-8xl font-bold -ml-2 tracking-tighter leading-none">
+              works
+            </h1>
+          </div>
+        </div>
+        <div class="mt-24 flex flex-col gap-8">
+          <div class="flex flex-col gap-3">
+            <h1 class="text-5xl font-bold">Britannia</h1>
+            <div class="flex items-center">
+              <h6 class="text-xl font-bold">2017</h6>
+              <img
+                src="./assets/arrow.png"
+                alt="arrow"
+                class="w-[5%] h-[10%] z-[-1]"
+              />
+              <h5 class="text-2xl font-bold">Mumbai</h5>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1580820371074-b3cd2f1fdd0c?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Rose"
+              class="h-[30rem] object-cover"
+            />
+          </div>
+        </div>
+        <div class="mt-24 flex flex-row gap-8">
+          <div class="flex w-[40%] flex-col gap-3">
+            <h1 class="text-5xl font-bold">Orange Splash</h1>
+            <div class="flex items-center gap-2">
+              <h6 class="text-xl font-bold">2022</h6>
+              <img
+                src="./assets/arrow.png"
+                alt="arrow"
+                class="w-[5%] h-[40%] z-[-1]"
+              />
+              <h5 class="text-2xl font-bold">Mumbai</h5>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1647618217230-6e394eae21cb?q=80&w=3122&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image"
+              class="w-[75%] object-cover"
+            />
+          </div>
+          <div class="flex w-[60%] flex-col gap-3 mt-20">
+            <h1 class="text-5xl font-bold">Palm Jumerah</h1>
+            <div class="flex items-center gap-2">
+              <h6 class="text-xl font-bold">2025</h6>
+              <img
+                src="./assets/arrow.png"
+                alt="arrow"
+                class="w-[5%] h-[40%] z-[-1]"
+              />
+              <h5 class="text-2xl font-bold">Dubai</h5>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1564490292125-2e3c78a0ef44?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image"
+              class="w-[100%] h-[31rem] object-cover"
+            />
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="flex justify-between items-center px-[10rem] py-8">
+      <h6 class="text-lg font-bold">Manpreet Singh</h6>
+      <h6 class="text-lg font-bold">10 Feb, 2025 [7:11 PM]</h6>
+    </footer>
   </body>
 </html>
