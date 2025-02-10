@@ -1,0 +1,9 @@
+@mixin arrow-image {
+  width: clamp(1.8rem, 1.5vw, 3rem);
+  height: clamp(1.8rem, 1.5vw, 5rem);
+  position: relative;
+  padding: 3px;
+  border: 1px solid #d9c5a775;
+  background-color: #22201e;
+  border-radius: clamp(1.5rem, 2vw, 2.5rem);
+}
