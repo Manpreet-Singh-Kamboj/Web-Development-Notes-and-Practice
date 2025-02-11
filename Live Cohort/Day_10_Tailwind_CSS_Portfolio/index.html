@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <header class="px-[2rem] lg:px-[10rem] py-8 font-['Helvetica_Now_Display']">
@@ -16,17 +17,23 @@
             <a href="#" class="font-medium text-lg tracking-tighter">Home</a>
           </li>
           <li>
-            <a href="#" class="font-medium text-lg opacity-30 tracking-tighter"
+            <a
+              href="#"
+              class="font-medium text-lg opacity-30 tracking-tighter hover:text-black hover:opacity-100 transition-all duration-300"
               >Socials</a
             >
           </li>
           <li>
-            <a href="#" class="font-medium text-lg opacity-30 tracking-tighter"
+            <a
+              href="#"
+              class="font-medium text-lg opacity-30 tracking-tighter hover:text-black hover:opacity-100 transition-all duration-300"
               >Projects</a
             >
           </li>
           <li>
-            <a href="#" class="font-medium text-lg opacity-30 tracking-tighter"
+            <a
+              href="#"
+              class="font-medium text-lg opacity-30 tracking-tighter hover:text-black hover:opacity-100 transition-all duration-300"
               >Contact</a
             >
           </li>
@@ -48,7 +55,9 @@
           </h1>
         </div>
         <div class="rightHeadings flex gap-0 lg:gap-4 xl:gap-3 items-center">
-          <h4 class="text-md font-medium tracking-tighter">[06:11 PM]</h4>
+          <h4 class="text-md font-medium tracking-tighter">
+            [ <span class="time"></span> ]
+          </h4>
           <div class="xl:w-32 w-16 h-[1.5px] bg-black"></div>
           <h3 class="xl:text-xl text-lg font-medium tracking-tighter">
             Creative Frontend Developer
@@ -98,12 +107,16 @@
           accusantium.
         </p>
       </section>
-      <section class="flex flex-col gap-28">
-        <div class="flex flex-col gap-10">
-          <div class="flex items-center gap-4">
-            <h1 class="text-3xl lg:text-7xl tracking-tighter">2017.</h1>
+      <section class="flex flex-col lg:gap-20 gap-12">
+        <div class="flex relative flex-col gap-5">
+          <div class="flex sticky bg-white py-2 top-0 items-center gap-4">
+            <h1
+              class="text-4xl font-bold lg:font-normal lg:text-7xl tracking-tighter"
+            >
+              2017.
+            </h1>
             <div class="w-24 lg:w-46 h-[1.5px] bg-[#030303]"></div>
-            <h1 class="text-5xl lg:text-7xl text-[#B2B2B2] tracking-tighter">
+            <h1 class="text-4xl lg:text-7xl text-[#B2B2B2] tracking-tighter">
               The Beginning
             </h1>
           </div>
@@ -130,11 +143,17 @@
             ></div>
           </div>
         </div>
-        <div class="flex flex-col gap-10">
-          <div class="flex items-center gap-4">
-            <h1 class="text-3xl lg:text-7xl tracking-tighter">2018.</h1>
+        <div class="flex relative flex-col gap-10">
+          <div class="flex sticky bg-white py-2 top-0 items-center gap-4">
+            <h1
+              class="text-4xl font-bold lg:font-normal lg:text-7xl tracking-tighter"
+            >
+              2018.
+            </h1>
             <div class="w-24 lg:w-46 h-[1.5px] bg-[#030303]"></div>
-            <h1 class="text-5xl lg:text-7xl text-[#B2B2B2] tracking-tighter">
+            <h1
+              class="text-[2.5rem] lg:text-7xl text-[#B2B2B2] tracking-tighter"
+            >
               Escalation
             </h1>
           </div>
@@ -221,26 +240,26 @@
           </div>
         </div>
       </section>
-      <section class="flex flex-col mt-36">
+      <section class="flex w-full flex-col mt-36">
         <div>
           <h6
             class="text-2xl lg:text-3xl xl:text-4xl -mb-2 lg:-mb-3 -ml-2 tracking-tighter"
           >
             Client
           </h6>
-          <div class="flex items-center gap-5">
+          <div class="flex w-full items-center gap-10 lg:gap-20">
             <h1
-              class="text-5xl lg:text-6xl xl:text-8xl font-bold -ml-2 tracking-tighter leading-none"
+              class="text-4xl whitespace-nowrap md:text-5xl w-1/3 lg:text-6xl xl:text-8xl font-bold -ml-2 tracking-tighter leading-none"
             >
-              Testimonials
+              Testimonial <span class="inline sm:hidden">works</span>
             </h1>
             <img
               src="./assets/arrow.png"
               alt="arrow"
-              class="hidden sm:block w-10% max-w-[25%] xl:min-w-[30%] h-[100%] z-[-1]"
+              class="ml-0 lg:ml-10 hidden sm:block w-[100%] z-[-1] overflow-hidden"
             />
             <h1
-              class="hidden sm:block text-4xl lg:text-5xl xl:text-8xl font-bold -ml-2 tracking-tighter leading-none"
+              class="hidden sm:block text-4xl w-1/3 lg:text-5xl xl:text-8xl font-bold tracking-tighter leading-none text-start sm:text-end"
             >
               works
             </h1>
@@ -248,15 +267,15 @@
         </div>
         <div class="mt-24 flex flex-col gap-8">
           <div class="flex flex-col gap-3">
-            <h1 class="text-5xl font-bold">Britannia</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold">Britannia</h1>
             <div class="flex items-center">
-              <h6 class="text-xl font-bold">2017</h6>
+              <h6 class="text-lg lg:text-xl font-bold">2017</h6>
               <img
                 src="./assets/arrow.png"
                 alt="arrow"
-                class="w-[5%] h-[10%] z-[-1]"
+                class="w-[10%] lg:w-[5%] h-[40%] z-[-1]"
               />
-              <h5 class="text-2xl font-bold">Mumbai</h5>
+              <h5 class="text-xl lg:text-2xl font-bold">Mumbai</h5>
             </div>
             <img
               src="https://images.unsplash.com/photo-1580820371074-b3cd2f1fdd0c?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -269,11 +288,11 @@
           <div class="flex w-full lg:w-[40%] flex-col gap-3">
             <h1 class="text-4xl lg:text-5xl font-bold">Orange Splash</h1>
             <div class="flex items-center gap-2">
-              <h6 class="text-xl font-bold">2022</h6>
+              <h6 class="text-lg lg:text-xl font-bold">2022</h6>
               <img
                 src="./assets/arrow.png"
                 alt="arrow"
-                class="w-[25%] lg:w-[5%] h-[40%] z-[-1]"
+                class="w-[10%] lg:w-[5%] h-[40%] z-[-1]"
               />
               <h5 class="text-2xl font-bold">Mumbai</h5>
             </div>
@@ -286,11 +305,11 @@
           <div class="flex w-full lg:w-[60%] flex-col gap-3 mt-20">
             <h1 class="text-4xl lg:text-5xl font-bold">Palm Jumerah</h1>
             <div class="flex items-center gap-2">
-              <h6 class="text-xl font-bold">2025</h6>
+              <h6 class="text-lg lg:text-xl font-bold">2025</h6>
               <img
                 src="./assets/arrow.png"
                 alt="arrow"
-                class="w-[25%] lg:w-[5%] h-[40%] z-[-1]"
+                class="w-[10%] lg:w-[5%] h-[40%] z-[-1]"
               />
               <h5 class="text-2xl font-bold">Dubai</h5>
             </div>
@@ -306,8 +325,12 @@
     <footer
       class="flex justify-between items-center px-[2rem] lg:px-[10rem] py-8"
     >
-      <h6 class="text-lg font-bold">Manpreet Singh</h6>
-      <h6 class="hidden sm:block text-lg font-bold">10 Feb, 2025 [7:11 PM]</h6>
+      <h6 class="text-lg font-bold">
+        Manpreet <span class="font-normal">Singh</span>
+      </h6>
+      <h6 class="hidden sm:block text-lg font-bold">
+        <span class="footer-date"></span> [ <span class="footer-time"></span> ]
+      </h6>
     </footer>
   </body>
 </html>
