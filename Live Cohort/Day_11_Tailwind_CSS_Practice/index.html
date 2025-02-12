@@ -31,7 +31,9 @@
       }
     </style>
   </head>
-  <body class="bg-[#FDFBF5] m-2 border border-black font-['Roboto_Mono']">
+  <body
+    class="bg-[#FDFBF5] m-2 lg:m-6 border border-black font-['Roboto_Mono']"
+  >
     <header>
       <nav
         class="px-4 py-4 lg:py-8 lg:px-8 lg:pt-8 flex justify-between items-center"
@@ -57,13 +59,19 @@
             LET'S TALK
           </a>
           <div class="w-[1px] h-7 bg-black hidden md:flex"></div>
-          <div class="px-2 py-1 rounded-4xl border border-black hidden md:flex">
+          <div
+            class="px-2 py-1 rounded-4xl border border-black hidden md:flex hover:text-[#FDFBF5] hover:bg-black transition-all duration-300"
+          >
             IN
           </div>
-          <div class="px-2 py-1 rounded-4xl border border-black hidden md:flex">
+          <div
+            class="px-2 py-1 rounded-4xl border border-black hidden md:flex hover:text-[#FDFBF5] hover:bg-black transition-all duration-300"
+          >
             PI
           </div>
-          <div class="px-2 py-1 rounded-4xl border border-black hidden md:flex">
+          <div
+            class="px-2 py-1 rounded-4xl border border-black hidden md:flex hover:text-[#FDFBF5] hover:bg-black transition-all duration-300"
+          >
             TW
           </div>
           <div class="w-[1px] h-7 bg-black hidden md:flex"></div>
@@ -82,14 +90,14 @@
     <main class="w-full h-full px-6 py-4 lg:px-8 lg:pt-8">
       <section class="hero px-2">
         <img src="./assets/hero.svg" alt="" class="flex lg:hidden w-15 h-15" />
-        <div class="mt-11 sm:mt-7 flex flex-col lg:flex-row gap-5">
+        <div class="mt-11 sm:mt-7 mb-10 flex flex-col lg:flex-row gap-5">
           <div class="w-full lg:w-1/2 flex flex-col sm:justify-between gap-16">
             <div class="flex flex-col gap-4">
-              <h1 class="font-['Syne'] text-5xl lg:text-7xl">
+              <h1 class="font-['Syne'] text-5xl lg:text-[5.5rem]">
                 We are a digital agency from Lisbon.
               </h1>
               <p
-                class="font-sans font-light text-lg lg:text-2xl lg:font-extralight w-full md:w-[50%] lg:w-[80%]"
+                class="font-sans font-light text-lx lg:text-[1.7rem] opacity-75 lg:font-extralight w-full md:w-[50%] lg:w-[80%]"
               >
                 Elevating brands through creative digital solutions, proudly
                 representing Lisbon's vibrant innovation.
@@ -106,7 +114,7 @@
             autoplay
             loop
             muted
-            class="rounded-xl w-full h-full lg:w-1/2"
+            class="rounded-xl w-full lg:min-h-130 object-cover lg:w-1/2"
           ></video>
         </div>
         <div class="h-[1px] mt-4 mb-4 mx-auto w-[100%] bg-black"></div>
@@ -290,7 +298,7 @@
             </a>
           </div>
         </div>
-        <div class="w-[2px] h-280 bg-black hidden lg:flex"></div>
+        <div class="w-[2px] bg-black hidden lg:flex"></div>
         <div
           class="h-[1px] px-2 mt-8 mb-6 mx-auto w-[100%] bg-black lg:hidden"
         ></div>
@@ -411,10 +419,10 @@
             OUR SERVICES
           </a>
         </div>
-        <div class="hidden lg:flex">
+        <div class="hidden lg:flex lg:justify-between lg:gap-6">
           <div class="flex flex-col justify-between w-2/3">
             <div>
-              <h3>HOW WE WORK</h3>
+              <h3 class="text-lg opacity-65">HOW WE WORK</h3>
               <h1 class="font-['Syne'] text-5xl md:text-6xl">
                 We help our clients succeed with innovative strategies.
               </h1>
@@ -443,6 +451,151 @@
         </div>
         <div class="h-[1px] px-2 mt-8 mb-6 mx-auto w-[100%] bg-black"></div>
       </section>
+      <section>
+        <div>
+          <h1 class="text-center text-5xl font-['Syne']">OUR VALUES</h1>
+          <div class="h-[1px] px-2 mt-8 mb-6 mx-auto w-[100%] bg-black"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row mt-10 lg:mt-14">
+          <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+            <img
+              src="https://framerusercontent.com/images/dbPPgNBvteyJTwf4izKJFQuFGJ8.jpg"
+              alt=""
+              class="rounded-xl lg:w-1/2 object-cover"
+            />
+            <div class="w-[2px] bg-black hidden lg:flex"></div>
+            <div
+              class="h-[1px] px-2 mt-4 mb-0 mx-auto w-[100%] bg-black hidden md:flex lg:hidden"
+            ></div>
+            <div>
+              <div class="flex gap-4">
+                <div>
+                  <div class="border border-black rounded-3xl px-2 py-[0.3rem]">
+                    01
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 mt-1">
+                  <h2 class="font-['Syne'] text-3xl">VISION</h2>
+                  <p class="font-['Satoshi'] opacity-75 lg:text-lg">
+                    Our relentless pursuit of a shared vision fuels our
+                    creativity and propels us forward. With clarity and
+                    foresight, we craft strategies that align with our clients'
+                    goals and aspirations, transforming their dreams into
+                    reality and shaping a future worth embracing.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-[1px] px-2 mt-4 mb-4 mx-auto w-[100%] bg-black"
+              ></div>
+              <div class="flex gap-4">
+                <div>
+                  <div class="border border-black rounded-3xl px-2 py-[0.3rem]">
+                    02
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 mt-1">
+                  <h2 class="font-['Syne'] text-3xl">INNOVATION</h2>
+                  <p class="font-['Satoshi'] opacity-75">
+                    Innovation is at the core of everything we do. We embrace
+                    curiosity, explore uncharted territories, and challenge the
+                    status quo. By pushing boundaries and thinking outside the
+                    box, we create groundbreaking solutions that disrupt
+                    industries and inspire audiences.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-[1px] px-2 mt-4 mb-4 mx-auto w-[100%] bg-black"
+              ></div>
+              <div class="flex gap-4">
+                <div>
+                  <div class="border border-black rounded-3xl px-2 py-[0.3rem]">
+                    03
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 mt-1">
+                  <h2 class="font-['Syne'] text-3xl">CONNECTION</h2>
+                  <p class="font-['Satoshi'] opacity-75">
+                    We believe in the power of connection. We strive to build
+                    bridges between brands and their audiences, fostering
+                    genuine and lasting relationships. Through compelling
+                    storytelling and meaningful interactions, we create
+                    experiences that evoke emotions, strengthen bonds, and
+                    cultivate trust, ultimately turning customers into brand
+                    advocates.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-[1px] px-2 mt-4 mb-4 mx-auto w-[100%] bg-black lg:hidden"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-[1px] px-2 mt-10 mb-10 mx-auto w-[100%] bg-black hidden lg:flex"
+        ></div>
+      </section>
+      <section>
+        <div class="flex flex-col gap-6">
+          <div>
+            <img src="./assets/contact.svg" alt="" class="lg:hidden" />
+          </div>
+          <div class="lg:hidden">
+            <p>CONTACT</p>
+            <div class="flex flex-col gap-6">
+              <h1 class="font-['Syne'] text-5xl uppercase">
+                Let’s bring your brand to the next level
+              </h1>
+              <p class="font-['Satoshi'] text-lg text-start">
+                Together, let's elevate your brand to new heights by unleashing
+                its full potential and captivating your target audience.
+              </p>
+            </div>
+            <a
+              href=""
+              class="flex w-max bg-[#191919] relative mt-10 text-[#FDFBF5] py-1 px-4 rounded-lg overflow-hidden after:content-['GET_IN_TOUCH'] after:text-[#FDFBF5] after:w-full after:h-full after:absolute after:left-0 after:bottom-[-100%] after:flex after:items-center after:justify-center after:rounded-lg after:z-[1] after:transition-all after:bg-[#191919] after:duration-300 hover:after:bottom-0"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:flex h-full">
+          <div class="flex flex-col w-[60%] gap-40">
+            <div>
+              <p class="">CONTACT</p>
+              <h1 class="text-7xl font-['Satoshi'] uppercase">
+                Let’s bring your brand to the next level
+              </h1>
+            </div>
+            <div>
+              <img src="./assets/contact.svg" alt="" />
+            </div>
+          </div>
+          <div class="w-[1px] bg-black"></div>
+          <div class="w-1/3 flex flex-col justify-between pl-10">
+            <p
+              class="font-['Satoshi'] text-[1.6rem] font-extralight opacity-60"
+            >
+              Together, let's elevate your brand to new heights by unleashing
+              its full potential and captivating your target audience.
+            </p>
+            <a
+              href=""
+              class="flex w-max bg-[#191919] relative mt-10 text-[#FDFBF5] py-1 px-4 rounded-lg overflow-hidden after:content-['GET_IN_TOUCH'] after:text-[#FDFBF5] after:w-full after:h-full after:absolute after:left-0 after:bottom-[-100%] after:flex after:items-center after:justify-center after:rounded-lg after:z-[1] after:transition-all after:bg-[#191919] after:duration-300 hover:after:bottom-0"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="w-full">
+      <div class="h-[1px] px-2 mt-4 mx-auto w-[100%] bg-black"></div>
+      <div class="flex justify-center items-center py-4 text-center">
+        &copy; 2025 Made with ❤️ by Manpreet. All Rights Reserved.
+      </div>
+    </footer>
   </body>
 </html>
