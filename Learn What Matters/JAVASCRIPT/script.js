@@ -101,3 +101,116 @@ if (arr !== arr2) {
 } else {
   console.log(true);
 }
+
+/*
+    Loops
+    There are 2 Loops in Javascript:
+        1. For Loop
+        2. While Loop
+    Loop means repeat.
+    Examples:
+    1 1 1 1 1 1 1 1 1
+    1 2 3 4 5 6 7 8 9
+
+    When to use loops?
+    * When we want to repeat a task repetitively, so we can run a loop.
+
+    For Loop Syntax: 
+        * for(start value; end value; increment value or change value){
+        *     code to be executed
+        * }
+    
+    While Loop Syntax: 
+        * while(condition){
+        *     code to be executed
+        * }
+        
+*/
+var str = "";
+for (var i = 25; i <= 50; i++) {
+  str += i;
+  str += " ";
+}
+console.log(str);
+str = "";
+var i = 0;
+while (i < 12) {
+  str += i;
+  str += " ";
+  i++;
+}
+console.log(str);
+
+/*
+    Functions in Javascript
+    Functions are block of code that can be reused to execute some logic.
+    Function Syntax:
+        * function functionName(parameters){
+        *    block of code
+        * }
+        * 
+        * functionName(arguments);
+        * arguments are real values which we give while calling the function.
+        * parameters are values in which the values of arguments are stored.
+*/
+function add(num1, num2) {
+  return num1 + " + " + num2 + " = " + (num1 + num2);
+}
+
+console.log(add(1, 3));
+console.log(add(100, 1214));
+
+/*
+    Arrays in Javascript
+    Arrays are collection of similar type of elements.
+    Array Syntax:
+        * var arrayName = [value1, value2, value3,..., valueN];
+    Array indexes start from 0 to n-1;
+    For Eg: [1,2,3,4,5]
+    Indexes: 0,1,2,3,4
+
+    Array Basic Methods: 
+        1. Push: Used to add an element at the end of the array.
+        2. Pop: Used to remove an element from the end of the array.
+        3. Shift: Used to remove the first element from the array.
+        4. Unshift: Used to add an element at the start of the array.
+        5. Splice: Used to remove an element from a specific index and second argument is the number of elements to remove.
+*/
+
+var arr3 = [1, 2, 3, 4, 5, 99];
+str = "";
+for (var i = 0; i < arr3.length; i++) {
+  str += arr3[i] + " ";
+}
+console.log(str);
+arr3.push(100);
+console.log(arr3);
+arr3.pop();
+console.log(arr3);
+arr3.unshift(101);
+console.log(arr3);
+arr3.shift();
+console.log(arr3);
+arr3.splice(1, 2);
+console.log(arr3);
+
+/*
+    Object in Javascript is holding a value of one thing using key value pairs.
+    Object Syntax:
+        * var objectName = {
+        *                       key1: value1, 
+        *                       key2: value2,
+        *                       ..., 
+        *                       keyN: valueN
+        *                   };
+*/
+
+var obj = {
+  name: "Manpreet Singh",
+  email: "manpreet@gmail.com",
+  getDetails: function () {
+    console.log("Name: " + obj.name + ": Email: " + obj.email);
+  },
+};
+
+obj.getDetails();
