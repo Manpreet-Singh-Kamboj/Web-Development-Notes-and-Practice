@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        overflow: hidden; /* Prevents unwanted scrolling */
+      }
+
+      .wrapper {
+        width: 100%;
+        height: 100vh; /* Ensure wrapper takes full viewport height */
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+      }
+      .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+        font-weight: 700;
+        scroll-snap-align: start;
+      }
+      .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+        font-weight: 700;
+        scroll-snap-align: start;
+      }
+      .section3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: chartreuse;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+        font-weight: 700;
+        scroll-snap-align: start;
+      }
+      .section4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: chocolate;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+        font-weight: 700;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="section1">Section 1</section>
+      <section class="section2">Section 2</section>
+      <section class="section3">Section 3</section>
+      <section class="section4">Section 4</section>
+    </div>
+  </body>
+</html>
