@@ -74,3 +74,30 @@ var arr2 = arr;
 arr2.pop();
 console.log(arr2);
 console.log(arr); // This will also change because arr2 is reference of arr.
+
+/* 
+    Conditionals in Javascript 
+    1. If
+    2. Else
+    3. Else-if
+
+    Jab bhi baat agar magar pr aayegi ya aisa waisa hojaye to conditionals use hote h.
+*/
+
+/*
+    if(true or false condition){
+        this will work if condition matches
+    }else if(true or false condition){
+        this will work if condition matches
+    }else{
+        if no condition matches then this works
+    }
+*/
+
+if (arr !== arr2) {
+  console.log(false);
+} else if (arr === arr2) {
+  console.log("Both are equal.");
+} else {
+  console.log(true);
+}
