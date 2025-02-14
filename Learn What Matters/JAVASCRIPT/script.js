@@ -1,5 +1,5 @@
-// Word vs Keyword
 /* 
+    Word vs Keyword in Javascript
     1. Word is a thing which has no meaning in Javascript and
     2. Keyword is a reserved word in Javascript which is known 
     by the Compiler.
