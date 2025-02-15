@@ -8,93 +8,318 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+body {
   font-family: sans-serif;
+  padding: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  background: #fff;
+  border: 1.5px solid #000;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+button a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 2rem;
+  left: -100%;
+  bottom: -100%;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+button:hover a {
+  color: white;
+  z-index: 10;
+}
+button:hover::after {
+  left: 0;
+  bottom: 0;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar ul {
+  list-style: none;
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5176470588);
+  transition: all 0.4s ease;
+}
+header .navbar ul li a:hover {
+  color: #000;
+}
+header .navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+header .navbar .nav-links .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .navbar .nav-links .search span {
+  display: none;
+}
+header .navbar .nav-links img {
+  width: 1.5rem;
 }
 
 main {
   width: 100%;
-  height: 100%;
-  padding: 1rem;
+  height: 50rem;
 }
 main .hero {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+}
+main .hero .content {
   padding-top: 2rem;
-}
-main .hero .top {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main .hero .top h1 {
-  font-size: clamp(2.5rem, 6vw, 8rem);
+main .hero .content h1 {
+  font-size: clamp(2.5rem, 5vw, 6rem);
 }
-main .hero .top h1 span {
+main .hero .content h1 span {
   color: gray;
 }
-main .hero .top p {
-  font-size: 1.1rem;
+main .hero .content p {
+  font-size: clamp(0.25rem, 5vw, 1rem);
 }
-main .hero .bottom {
+main .hero .content .plan {
+  display: none;
+}
+main .hero .container {
   width: 100%;
-  max-height: 20rem;
-  aspect-ratio: 1/1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-main .hero .bottom .images {
+main .hero .container .grid-container {
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-areas: "a a b b " "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c";
-  gap: 1.2rem;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c";
+  gap: 1rem;
 }
-main .hero .bottom .images div {
+main .hero .container .grid-container img {
   width: 100%;
-  height: 100%;
-}
-main .hero .bottom .images div img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
-main .hero .bottom .images .img-a {
+main .hero .container .grid-container .img-a {
   grid-area: a;
+  aspect-ratio: 1/2;
 }
-main .hero .bottom .images .img-b {
+main .hero .container .grid-container .img-b {
   grid-area: b;
+  aspect-ratio: 4/5;
 }
-main .hero .bottom .images .img-c {
+main .hero .container .grid-container .img-c {
   grid-area: c;
-  aspect-ratio: 16/9;
+}
+main .hero .container .plan {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+main .destinations {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .destinations h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+main .destinations .locations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .destinations .locations .filter {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+main .destinations .locations .filter img {
+  width: 0.6rem;
+}
+main .destinations .locations .desktop-filter {
+  display: none;
+}
+main .destinations .locations .location-cards {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+main .destinations .locations .location-cards .location-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .destinations .locations .location-cards .location-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 1.5rem;
+}
+main .destinations .locations .location-cards .location-card h4 {
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-weight: 600;
+}
+main .destinations .locations .location-cards .location-card p {
+  color: rgba(0, 0, 0, 0.5411764706);
+}
+main .destinations .explore-btn {
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 1020px) {
-  main {
-    padding: 3rem;
+@media (min-width: 768px) {
+  body {
+    padding: 2rem 4rem;
+  }
+  button {
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
+    background: #fff;
+    border: 1.5px solid #000;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  button a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all 0.4s ease;
+    z-index: 2;
+  }
+  button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 2rem;
+    left: -100%;
+    bottom: -100%;
+    transition: all 0.4s ease;
+    z-index: 1;
+  }
+  button:hover a {
+    color: white;
+    z-index: 10;
+  }
+  button:hover::after {
+    left: 0;
+    bottom: 0;
+  }
+  header .navbar ul {
+    display: flex;
+  }
+  header .navbar .nav-links .search span {
+    display: block;
+  }
+  header .navbar .nav-links .mobile-icon {
+    display: none;
   }
   main .hero {
     flex-direction: row;
+    padding-top: 2.5rem;
+    gap: 3rem;
+  }
+  main .hero .content {
+    width: 55%;
+  }
+  main .hero .content .plan {
+    padding-top: 1rem;
+    display: block;
+  }
+  main .hero .container {
+    width: 45%;
+    display: flex;
+    align-items: end;
+  }
+  main .hero .container .grid-container {
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" ". . c c" ". . c c";
     gap: 2rem;
   }
-  main .hero .top {
-    padding-top: 5.5rem;
-    width: 50%;
+  main .hero .container .grid-container .img-a {
+    aspect-ratio: 2/3;
   }
-  main .hero .top h1 {
-    font-size: clamp(3rem, 6vw, 10rem);
+  main .hero .container .grid-container .img-b {
+    aspect-ratio: 2.2/3;
   }
-  main .hero .top p {
-    font-size: clamp(1rem, 3vw, 1.3rem);
-    opacity: 0.6;
+  main .hero .container .grid-container .img-c {
+    aspect-ratio: 1/1;
   }
-  main .hero .bottom {
-    width: 50%;
+  main .hero .container .plan {
+    display: none;
   }
-  main .hero .bottom .images {
-    grid-template-areas: ". . b b " "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" ". . c c";
+  main .destinations .locations .filter {
+    display: none;
+  }
+  main .destinations .locations .desktop-filter {
+    display: flex;
+    gap: 2rem;
+  }
+  main .destinations .locations .desktop-filter div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  main .destinations .locations .desktop-filter div img {
+    width: 0.6rem;
+  }
+  main .destinations .locations .location-cards .location-card {
+    width: 25%;
+  }
+  main .destinations .locations .location-cards .location-card img {
+    aspect-ratio: 2/3;
+  }
+  main .destinations .explore-btn {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
