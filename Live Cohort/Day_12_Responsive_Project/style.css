@@ -267,7 +267,7 @@ main .latest-stories .stories .other-stories .story img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
   aspect-ratio: 1/1;
 }
 main .latest-stories .stories .other-stories .story div {
