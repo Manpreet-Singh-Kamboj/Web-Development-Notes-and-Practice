@@ -214,6 +214,71 @@ main .destinations .explore-btn {
   display: flex;
   justify-content: center;
 }
+main .latest-stories {
+  padding-bottom: 2rem;
+}
+main .latest-stories .heading button {
+  display: none;
+}
+main .latest-stories .stories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+main .latest-stories .stories .top-story {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+main .latest-stories .stories .top-story img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 2rem;
+}
+main .latest-stories .stories .top-story div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .latest-stories .stories .top-story div h4 {
+  font-size: clamp(0.75rem, 5vw, 1.25rem);
+  font-weight: 600;
+}
+main .latest-stories .stories .other-stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+main .latest-stories .stories .other-stories .story {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .latest-stories .stories .other-stories .story img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 2rem;
+  aspect-ratio: 1/1;
+}
+main .latest-stories .stories .other-stories .story div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .latest-stories .stories .other-stories .story div h4 {
+  font-size: clamp(0.6rem, 5vw, 1rem);
+  font-weight: 600;
+}
 
 @media (min-width: 768px) {
   body {
@@ -320,6 +385,28 @@ main .destinations .explore-btn {
     aspect-ratio: 2/3;
   }
   main .destinations .explore-btn {
+    display: none;
+  }
+  main .latest-stories .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .latest-stories .heading button {
+    display: block;
+  }
+  main .latest-stories .stories {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  main .latest-stories .stories .top-story {
+    width: 50%;
+  }
+  main .latest-stories .stories .other-stories {
+    width: 50%;
+  }
+  main .latest-stories .stories .other-stories button {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
