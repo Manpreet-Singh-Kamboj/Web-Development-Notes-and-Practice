@@ -1,0 +1,9 @@
+@import "variables";
+
+@mixin btn-style {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: $primary-color;
+  font-weight: 500;
+}
