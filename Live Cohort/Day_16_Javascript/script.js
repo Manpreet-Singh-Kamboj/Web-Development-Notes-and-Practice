@@ -45,4 +45,4 @@ console.log(implicitReturnArrowFunction(30));
 function restParameters(a, b, c, ...rest) {
   console.log(a, b, c, rest);
 }
-restParameters(1, 2, 3, 4, 5, 6, 7, 8, 9);
+restParameters(1, 2, 3, 4, 5, 6, 7, 8, 9); // Output: 1,2,3,[4,5,6,7,8,9]
