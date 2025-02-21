@@ -37,6 +37,7 @@ body {
   border: 1px solid black;
   background-color: #99e39e;
   font-weight: 500;
+  color: black;
 }
 
 .main .hero {
@@ -84,6 +85,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  color: black;
 }
 .main .marquee-section {
   margin-top: 3rem;
@@ -292,6 +294,7 @@ body {
   border: 1px solid black;
   background-color: #99e39e;
   font-weight: 500;
+  color: black;
 }
 .main .portfolio {
   margin-top: 2rem;

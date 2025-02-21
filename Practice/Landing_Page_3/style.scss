@@ -38,6 +38,7 @@ body {
     .nav-btn {
       display: none;
       @include btn-style;
+      color: black;
     }
   }
 }
@@ -80,6 +81,7 @@ body {
         display: flex;
         align-items: center;
         gap: 0.3rem;
+        color: black;
       }
     }
   }
@@ -285,6 +287,7 @@ body {
         align-items: center;
         gap: 0.3rem;
         @include btn-style;
+        color: black;
       }
     }
   }
