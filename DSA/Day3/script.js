@@ -97,3 +97,7 @@ console.log(`Electricity Bill: ${electricityPrice}`);
     2. Exit Level Loop: We only have control over exit condition.
         1. Do-While Loop
 */
+
+for (let i = 1; i <= 5; i++) {
+  console.log("Hello, World!");
+}
