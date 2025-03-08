@@ -51,7 +51,6 @@ let electricityUnits = 600 || Number(prompt("Enter your electricity units: "));
 let electricityPrice = 0;
 
 // Brute Force Solution
-
 if (electricityUnits > 0 && electricityUnits <= 100) {
   electricityPrice = electricityUnits * 4.2;
 } else if (electricityUnits > 100 && electricityUnits <= 200) {
@@ -66,6 +65,7 @@ if (electricityUnits > 0 && electricityUnits <= 100) {
 console.log(`Electricity Bill: ${electricityPrice}`);
 
 electricityPrice = 0;
+
 // Optimized Force Solution
 if (electricityUnits > 400) {
   const units = electricityUnits - 400;
@@ -88,3 +88,12 @@ if (electricityUnits > 0 && electricityUnits <= 100) {
 }
 
 console.log(`Electricity Bill: ${electricityPrice}`);
+
+/*
+    Types of Loops in JS: 
+    1. Entry Level Loop: We have control over entry condition.
+        1. For Loop
+        2. While Loop
+    2. Exit Level Loop: We only have control over exit condition.
+        1. Do-While Loop
+*/
