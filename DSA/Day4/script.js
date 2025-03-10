@@ -77,7 +77,7 @@ if (isNaN(l)) {
       console.log(i);
     }
   }
-  console.log(k);
+  console.log(l);
 }
 
 const p = 11 || Number(prompt("Enter a number: "));
