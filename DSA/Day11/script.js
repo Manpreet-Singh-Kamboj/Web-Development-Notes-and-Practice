@@ -6,7 +6,7 @@ function transposeMatrixNN(arr) {
   const rows = arr.length;
   const cols = arr[0].length;
   for (let i = 0; i < rows; i++) {
-    for (let j = i + 1; j < cols; j++) {
+    for (let j = i; j < cols; j++) {
       [arr[i][j], arr[j][i]] = [arr[j][i], arr[i][j]];
     }
   }
