@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #121212;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .post {
+    position: relative;
+    .like-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      .icon {
+        position: relative;
+        font-size: 8rem;
+        color: #fff;
+        transition: all 1s ease-in-out;
+      }
+    }
+    width: 450px;
+    height: 450px;
+    background-color: #000;
+    border-radius: 0.7rem;
+    border: 1.5px solid #fff;
+    .post-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10%;
+      padding: 0.5rem;
+      .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+          height: 2rem;
+          width: 4rem;
+          border-radius: 0.3rem;
+        }
+        h3 {
+          color: #fff;
+          font-size: 0.9rem;
+        }
+      }
+      .more-icon {
+        color: #fff;
+      }
+    }
+    .post-body {
+      height: 80%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+      }
+    }
+    .post-footer {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      height: 5%;
+      padding: 0.2rem 0.5rem;
+      .icon {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@keyframes like {
+  0% {
+    top: 35%;
+    scale: 1.2;
+    opacity: 1;
+    color: palevioletred;
+  }
+  20% {
+    scale: 1.5;
+    color: palevioletred;
+  }
+  30% {
+    scale: 1.3;
+    color: palevioletred;
+  }
+  50% {
+    scale: 0.8;
+    color: palevioletred;
+  }
+  100% {
+    top: 0%;
+    scale: 0.4;
+    opacity: 0;
+    color: palevioletred;
+  }
+}
