@@ -5,6 +5,8 @@ h1.innerHTML = "Hey There!!";
 const img = document.querySelector("#img");
 const btn = document.querySelector("#btn");
 
+console.log("Here");
+
 btn.addEventListener("click", () => {
   btn.textContent = "Fetching Image...";
   setTimeout(() => {
