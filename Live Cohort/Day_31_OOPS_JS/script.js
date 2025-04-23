@@ -30,6 +30,10 @@ Employee.prototype.getDetails = function () {
   return `Id: ${this.id}, Name: ${this.name}, Age: ${this.age}, Salary: ${this.salary}`;
 };
 
+// Employee.prototype.getDetails = function () {
+//   return `Id: ${this.id}, Name: ${this.name}, Age: ${this.age}, Salary: ${this.salary}`;
+// };
+
 const e1 = new Employee("John", 23, 1, 10000);
 const e2 = new Employee("Jane", 24, 2, 20000);
 const e3 = new Employee("Jack", 25, 3, 30000);
