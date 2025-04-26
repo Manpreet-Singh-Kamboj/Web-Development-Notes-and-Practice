@@ -76,3 +76,16 @@ const iphone16ProMax = new Mobile(
 let jioSim2 = new Sim("Jio", 9876543212, 399);
 iphone16ProMax.insertSim(jioSim2);
 MyMobileShop.addMobiles([samsungS25Ultra, samsungS25, iphone16ProMax]);
+
+const ChdMobileShop = new MobileShop();
+const samsungS25Plus = new Mobile("Samsung", "S25 Plus", 70000, "Black");
+const iphone16Pro = new Mobile(
+  "Apple",
+  "iPhone 16 Pro",
+  110000,
+  "Desert Titanium"
+);
+let airtelSim2 = new Sim("Airtel", 9876543213, 399);
+iphone16Pro.insertSim(airtelSim2);
+ChdMobileShop.addMobiles([samsungS25Plus, iphone16Pro]);
+MyMobileShop.getMobiles();
