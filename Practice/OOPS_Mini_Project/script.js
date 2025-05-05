@@ -89,4 +89,3 @@ let airtelSim2 = new Sim("Airtel", 9876543213, 399);
 iphone16Pro.insertSim(airtelSim2);
 ChdMobileShop.addMobiles([samsungS25Plus, iphone16Pro]);
 MyMobileShop.getMobiles();
-// ignore
