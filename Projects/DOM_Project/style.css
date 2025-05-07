@@ -1,0 +1,157 @@
+:root {
+  --primary: #222831;
+  --secondary: #393e46;
+  --tertiary1: #948979;
+  --tertiary2: #dfd0b8;
+}
+
+@font-face {
+  font-family: aeonik;
+  font-weight: 200;
+  src: url(./assets/fonts/AeonikTRIAL-Light.otf);
+}
+@font-face {
+  font-family: aeonik;
+  font-weight: 500;
+  src: url(./assets/fonts/AeonikTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: aeonik;
+  font-weight: 700;
+  src: url(./assets/fonts/AeonikTRIAL-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: aeonik;
+  color: var(--tertiary2);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: var(--secondary);
+}
+
+section.allElems {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  padding-top: 80px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.elem {
+  background-color: var(--secondary);
+  height: 400px;
+  width: 330px;
+  font-size: 24px;
+  text-align: end;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.elem h2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.fullElem {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  z-index: 10;
+  display: none;
+  background-color: var(--primary);
+}
+
+.back {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 20px;
+  gap: 12px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.todo-list-page h2 {
+  font-size: 50px;
+  margin-top: 17.5px;
+}
+
+.todo-list-page .todo-container {
+  height: 85%;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.todo-list-page .todo-container .addTask {
+  width: 30%;
+  height: 100%;
+  background-color: red;
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+
+.todo-list-page .todo-container .allTasks {
+  width: 70%;
+  height: 100%;
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+
+.elem:active {
+  scale: 0.95;
+}
+
+.back:active {
+  scale: 0.9;
+}
