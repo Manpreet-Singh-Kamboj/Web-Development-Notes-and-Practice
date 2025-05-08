@@ -117,6 +117,8 @@ section.allElems {
   transition: all ease 0.15s;
 }
 
+/* Todo List Styles */
+
 .todo-list-page h2 {
   font-size: 50px;
   margin-top: 17.5px;
@@ -295,6 +297,11 @@ section.allElems {
 .todo-list-page .todo-container .allTasks .task .actions .delete {
   background-color: green;
   color: #f0f0f0;
+  transition: all ease 0.15s;
+}
+
+.todo-list-page .todo-container .allTasks .task .actions .delete:active {
+  scale: 0.95;
 }
 
 .elem:active {
@@ -303,4 +310,11 @@ section.allElems {
 
 .back:active {
   scale: 0.9;
+}
+
+/* Daily Planner Styles */
+
+.daily-planner-page h2 {
+  font-size: 50px;
+  margin-top: 17.5px;
 }
