@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+
+.form input {
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.form textarea {
+  padding: 10px 10px;
+  border-radius: 10px;
+  resize: none;
+}

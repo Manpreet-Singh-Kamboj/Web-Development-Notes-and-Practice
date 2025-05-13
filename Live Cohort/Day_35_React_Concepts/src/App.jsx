@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 import "./App.css";
+import Users from "./components/Users";
+import UserForm from "./components/UserForm";
 
 function App() {
   const [users, setUsers] = useState([
@@ -20,73 +22,21 @@ function App() {
   const [age, setAge] = useState("");
   const [hobbies, setHobbies] = useState("");
 
-  const renderUser = users.map((user, index) => {
-    return (
-      <div key={index}>
-        <h2>{user.name}</h2>
-        <p>{user.age}</p>
-        <ul>
-          {user.hobbies?.map((hobby, index) => {
-            return <li key={index}>{hobby}</li>;
-          })}
-        </ul>
-      </div>
-    );
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setUsers((prev) => [
-      ...prev,
-      {
-        name,
-        age,
-        hobbies: hobbies.split(","),
-      },
-    ]);
-    setName("");
-    setAge("");
-    setHobbies("");
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "name") {
-      setName(value);
-    } else if (name === "age") {
-      setAge(value);
-    } else if (name === "hobbies") {
-      setHobbies(value);
-    }
-  };
-
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          name="name"
-          value={name}
-          type="text"
-          placeholder="Name"
-          onChange={handleChange}
-        />
-        <input
-          name="age"
-          value={age}
-          type="number"
-          placeholder="Age"
-          onChange={handleChange}
-        />
-        <textarea
-          name="hobbies"
-          value={hobbies}
-          onChange={handleChange}
-          placeholder="Write your hobbies like coding, reading"
-        />
-        <button type="submit">Submit</button>
-      </form>
-      <h1>Users</h1>
-      {renderUser}
+    <div className="container">
+      <UserForm
+        name={name}
+        age={age}
+        hobbies={hobbies}
+        setName={setName}
+        setAge={setAge}
+        setHobbies={setHobbies}
+        setUsers={setUsers}
+      />
+      <div className="right">
+        <h1>Users</h1>
+        <Users users={users} />
+      </div>
     </div>
   );
 }
